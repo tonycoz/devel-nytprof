@@ -2395,7 +2395,7 @@ subr_entry_setup(pTHX_ COP *prev_cop, subr_entry_t *clone_subr_entry, OPCODE op_
 {
     int saved_errno = errno;
     subr_entry_t *subr_entry;
-    I32 prev_subr_entry_ix;
+    SSize_t prev_subr_entry_ix;
     subr_entry_t *caller_subr_entry;
     const char *found_caller_by;
     char *file;
